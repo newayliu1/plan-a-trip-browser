@@ -2,11 +2,12 @@
 
 module.exports = function (environment) {
   'use strict';
-  const ENV = {
+  var ENV = {
     modulePrefix: 'plan-a-trip-browser',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
+    apiHost: 'http://localhost:3000/',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -49,7 +50,9 @@ module.exports = function (environment) {
   }
 
   if (environment === 'production') {
-    ENV.locationType = 'hash';
+    ENV.rootURL = '/plan-a-trip-browser';
+  ENV.locationType = 'hash';
+  ENV.apiHost = 'https://plan-a-trip-api.herokuapp.com';
   }
 
   return ENV;
