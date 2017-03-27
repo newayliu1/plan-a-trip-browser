@@ -16,4 +16,4 @@
 - User is able to see all the attractions in a trip
 
 ## WireFrame
-![WireFrame][https://cloud.githubusercontent.com/assets/19287350/24368473/8ffb7b46-12ee-11e7-83cd-ac9a41f4c4d5.JPG]
+![WireFrame](https://cloud.githubusercontent.com/assets/19287350/24368473/8ffb7b46-12ee-11e7-83cd-ac9a41f4c4d5.JPG)
