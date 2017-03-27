@@ -4,6 +4,11 @@ export default Ember.Route.extend({
   auth: Ember.inject.service(),
   flashMessages: Ember.inject.service(),
 
+  // model () {
+  // let id = this.get('auth').get('credentials').get('id');
+  // return this.get('store').find('user', id);
+  // },
+
   actions: {
     signOut () {
       this.get('auth').signOut()
