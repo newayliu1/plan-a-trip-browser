@@ -25,16 +25,6 @@
   {{flash-message flash=flash}}
 {{/each}}
 
-{{#unless isAuthenticated}}
-<h1>Please SIGN IN Or SIGN UP To Star Your Journal!!!</h1>
-{{else}}
-<div class='user-info'>
-{{user-info user=user}}
-{{#link-to 'trips.new' class='btn btn-warning'}}CREATE NEW TRIPS{{/link-to}}
-{{#link-to 'trips' class='btn btn-info'}}MY TRIPS{{/link-to}}
-</div>
-{{/unless}}
-
 <div class="col-md-8 col-md-offset-2">
   {{outlet}}
 </div>
