@@ -13,8 +13,11 @@ Router.map(function () {
   this.route('trips', function() {
     this.route('new');
   });
-  this.route('trip', {path: '/trips/:trip_id'}, function() {
+  this.route('trip', { path: '/trips/:trip_id' }, function() {
     this.route('edit');
+    this.route('attraction', { path: '/:attraction_id' }, function() {
+      this.route('edit');
+    });
   });
 });
 

@@ -9,7 +9,9 @@
 <p>{{attraction.notes}}</p>
 </spam>
 <spam>
-<div>Edit</div>
+{{#link-to 'trip.attraction.edit' attraction}}<div>Edit</div>{{/link-to}}
 </spam>
 </div>
 {{/each}}
+
+<button {{action 'create'}} class='btn btn-info btn-xs'>Create</button>
