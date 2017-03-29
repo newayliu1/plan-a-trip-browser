@@ -18,6 +18,7 @@ Router.map(function () {
     this.route('attraction', { path: '/:attraction_id' }, function() {
       this.route('edit');
     });
+    this.route('new');
   });
 });
 

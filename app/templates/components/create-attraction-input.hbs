@@ -1,0 +1,13 @@
+<h3>Create An New Attraction</h3>
+<form>
+  <label for="name">Attraction Name</label>
+  {{input id="name" value=attraction.name}}
+  <label for="address">Address</label>
+  {{input id="address" value=attraction.address}}
+  <label for="time">Time Spend</label>
+  {{input id="time" value=attraction.timeSpend}}
+  <label for="notes">Notes</label>
+  {{input id="notes" value=attraction.notes}}
+</form>
+<button {{action 'save'}}>Submit</button>
+<button class='btn btn-xs btn-danger' {{action 'cancel'}}>Cancel</button>
