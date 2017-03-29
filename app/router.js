@@ -13,7 +13,9 @@ Router.map(function () {
   this.route('trips', function() {
     this.route('new');
   });
-  this.route('trip', {path: '/trips/:trip_id'});
+  this.route('trip', {path: '/trips/:trip_id'}, function() {
+    this.route('edit');
+  });
 });
 
 export default Router;

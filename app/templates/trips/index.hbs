@@ -1,0 +1,4 @@
+<h1>My Trips</h1>
+{{#each model as |trip|}}
+{{trip-item trip=trip delete='deleteTrip' edit='editTrip'}}
+{{/each}}
