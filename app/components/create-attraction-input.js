@@ -1,4 +1,24 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  newItem: {
+    name: '',
+    address: '',
+    timeSpend: 120,
+    notes: '',
+  },
+  actions: {
+    save() {
+      let data = this.get('newItem');
+      data.trip = this.get('trip');
+      this.sendAction('save', data);
+      this.set('newItem.name', '');
+      this.set('newItem.address', '');
+      this.set('newItem.notes', '');
+    },
+    cancel() {
+      this.get('attraction').rollbackAttributes();
+      this.sendAction('cancel');
+    },
+  }
 });
