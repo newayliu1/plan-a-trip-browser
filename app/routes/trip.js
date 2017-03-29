@@ -4,4 +4,9 @@ export default Ember.Route.extend({
   model(params) {
     return this.get('store').findRecord('trip', params.trip_id);
   },
+  actions: {
+    delete(attraction){
+      attraction.destroyRecord();
+    }
+  }
 });
