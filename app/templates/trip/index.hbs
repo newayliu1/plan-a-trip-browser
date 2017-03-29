@@ -1,6 +1,15 @@
 <h2>{{model.name}}</h2>
-<ul>
+
 {{#each model.attractions as |attraction|}}
-<li><h3>{{attraction.name}}</h3></li>
+<div class='box'>
+<spam>
+<h3>{{attraction.name}}</h3>
+<h4>{{attraction.address}}</h4>
+<h5>{{attraction.timeSpend}} MINS</h5>
+<p>{{attraction.notes}}</p>
+</spam>
+<spam>
+<div>Edit</div>
+</spam>
+</div>
 {{/each}}
-</ul>
