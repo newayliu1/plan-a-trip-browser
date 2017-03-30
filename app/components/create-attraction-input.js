@@ -15,10 +15,14 @@ export default Ember.Component.extend({
       this.set('newItem.name', '');
       this.set('newItem.address', '');
       this.set('newItem.notes', '');
+      this.set('newItem.timeSpend', 120);
     },
     cancel() {
-      this.get('attraction').rollbackAttributes();
       this.sendAction('cancel');
+      this.set('newItem.name', '');
+      this.set('newItem.address', '');
+      this.set('newItem.notes', '');
+      this.set('newItem.timeSpend', 120);
     },
   }
 });

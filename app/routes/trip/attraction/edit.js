@@ -8,7 +8,7 @@ export default Ember.Route.extend({
       .then(() => this.transitionTo('trip'))
       .catch(() => {
         this.get('flashMessages')
-        .danger('Needs to be numbers. Please try again.');
+        .danger('Time speed has to be numbers. Please try again.');
       });
     },
     cancel () {
