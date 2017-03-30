@@ -2,3 +2,5 @@
 {{#each model as |trip|}}
 {{trip-item trip=trip delete='deleteTrip' edit='editTrip'}}
 {{/each}}
+{{#link-to 'trips.new' class='btn btn-warning'}}CREATE NEW TRIPS{{/link-to}}
+{{#link-to 'application' class='btn btn-success'}}Back{{/link-to}}

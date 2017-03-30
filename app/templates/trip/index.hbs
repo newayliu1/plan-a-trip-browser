@@ -4,15 +4,16 @@
 <div class='box'>
 <spam>
 <h3>{{attraction.name}}</h3>
-<h4>{{attraction.address}}</h4>
-<h5>{{attraction.timeSpend}} MINS</h5>
-<p>{{attraction.notes}}</p>
+<h4>Address: {{attraction.address}}</h4>
+<h5>Expected time spend: {{attraction.timeSpend}} MINS</h5>
+<p>Notes: <br/> {{attraction.notes}}</p>
 </spam>
 <spam>
-{{#link-to 'trip.attraction.edit' attraction}}<div>Edit</div>{{/link-to}}
-<div {{action 'delete' attraction}}>Delete</div>
+{{#link-to 'trip.attraction.edit' attraction class='btn btn-primary btn-xs'}}<div>Edit</div>{{/link-to}}
+<div {{action 'delete' attraction}} class='btn btn-danger btn-xs'>Delete</div>
 </spam>
 </div>
 {{/each}}
 
-{{#link-to 'trip.new' model class='btn btn-info btn-xs'}}<div>Create</div>{{/link-to}}
+{{#link-to 'trip.new' model class='btn btn-warning'}}<div>Create New attraction</div>{{/link-to}}
+{{#link-to 'trips' class='btn btn-success'}}Back{{/link-to}}

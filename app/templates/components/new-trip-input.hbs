@@ -1,5 +1,5 @@
-<form class='form-group' {{action 'save' on='submit'}}>
+<form class='form-group'>
 {{input class='form-goup' value=trip.name}}
 </form>
-
+<button {{action 'save'}} class='btn btn-warning btn-xs'>Submit</button>
 <button class='btn btn-xs btn-danger' {{action 'cancel'}}>Cancel</button>

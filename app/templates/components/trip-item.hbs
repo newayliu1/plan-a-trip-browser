@@ -1,5 +1,9 @@
+
+<div class='box'>
 {{#link-to 'trip' trip}}
 <h3>{{trip.name}}</h3>
 {{/link-to}}
+<h3>Attractions: {{trip.attractions.length}}</h3>
 <button {{action 'delete'}} class='btn btn-danger btn-xs'>Delete</button>
 <button {{action 'edit'}} class='btn btn-primary btn-xs'>Edit</button>
+</div>
