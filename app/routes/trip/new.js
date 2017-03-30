@@ -8,6 +8,7 @@ export default Ember.Route.extend({
       attraction.save()
         .then(() => this.transitionTo('trip'))
         .catch(() => {
+          attraction.destroyRecord();
           this.get('flashMessages')
           .danger('Attraction name and address can not be empty. And Time speed has to be numbers. Please try again.');
         });
