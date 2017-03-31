@@ -13,12 +13,21 @@ HEROKU: https://plan-a-trip-api.herokuapp.com/
 ## TECHNOLOGIES
 For this project I created a full stack applciation using SQL, Ruby on Rails, and Ember Framework.
 
+## Installation Instruction
+```
+npm install && bower install
+```
+
 ## APPROACH
 I decided to design the backend first, and build out back end based on the ERD. The app needed to allow a user CRUD on trips, and attraction table.
 
 Once the backend was set up, I drew and designed the front end layer out. Since ember has more complicated layer than other front end framework, I had spent a lot more time on the preparation.
 
 Making frontend browser using ember had a lot of fun, it saved user a lot of time to write a jax request. However, knowing how each layer and ember database working is complicated and doubtfull.
+
+## Future Of Plan A Trip
+
+I would like to add a search functionality to get attraction from third party API. User is able to add the attraction from the search. Also, I would like to reorder the attractions list, and calculate all the time spend from the first attraction to the last attraction including the traffic time. 
 
 ## User Story
 - User is able to sign up
