@@ -7,6 +7,10 @@ export default Ember.Component.extend({
     timeSpend: 120,
     notes: '',
   },
+  init() {
+    this._super(...arguments);
+    this.set('newItem', {});
+  },
   actions: {
     save() {
       let data = this.get('newItem');
