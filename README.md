@@ -1,5 +1,7 @@
 # Plan a trip browser
 
+![alt tag](http://i.imgur.com/zv4Odg4.png)
+
 DEPLOYED FRONT END: https://newayliu1.github.io/plan-a-trip-browser
 
 
