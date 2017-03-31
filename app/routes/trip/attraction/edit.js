@@ -7,6 +7,7 @@ export default Ember.Route.extend({
       attraction.save()
       .then(() => this.transitionTo('trip'))
       .catch(() => {
+        attraction.rollbackAttributes();
         this.get('flashMessages')
         .danger('Time speed has to be numbers. Please try again.');
       });

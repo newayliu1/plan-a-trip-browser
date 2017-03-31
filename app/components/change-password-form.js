@@ -18,6 +18,7 @@ export default Ember.Component.extend({
 
     reset () {
       this.set('passwords', {});
+      this.sendAction('reset');
     },
   },
 });

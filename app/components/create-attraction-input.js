@@ -1,15 +1,9 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  newItem: {
-    name: '',
-    address: '',
-    timeSpend: 120,
-    notes: '',
-  },
   init() {
     this._super(...arguments);
-    this.set('newItem', {});
+    this.set('newItem', {timeSpend: 120});
   },
   actions: {
     save() {

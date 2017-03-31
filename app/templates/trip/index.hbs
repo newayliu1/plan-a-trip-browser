@@ -2,16 +2,16 @@
 
 {{#each model.attractions as |attraction|}}
 <div class='box'>
-<spam>
+<span>
 <h3>{{attraction.name}}</h3>
 <h4>Address: {{attraction.address}}</h4>
 <h5>Expected time spend: {{attraction.timeSpend}} MINS</h5>
 <p>Notes: <br/> {{attraction.notes}}</p>
-</spam>
-<spam>
+</span>
+<span>
 {{#link-to 'trip.attraction.edit' attraction class='btn btn-primary btn-xs'}}<div>Edit</div>{{/link-to}}
 <div {{action 'delete' attraction}} class='btn btn-danger btn-xs'>Delete</div>
-</spam>
+</span>
 </div>
 {{/each}}
 
