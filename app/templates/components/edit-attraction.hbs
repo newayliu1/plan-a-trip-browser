@@ -2,9 +2,9 @@
 <h4>{{attraction.address}}</h4>
 <form>
   <label for="time" type="number">Time Spend</label>
-  {{input id="time" value=attraction.timeSpend}}
+  {{input id="time" value=attraction.timeSpend maxlength=50}}
   <label for="notes">Notes</label>
-  {{input id="notes" value=attraction.notes}}
+  {{input id="notes" value=attraction.notes maxlength=100}}
 </form>
 <button {{action 'save'}} class='btn btn-warning btn-xs'>Submit</button>
 <button class='btn btn-xs btn-danger' {{action 'cancel'}}>Cancel</button>
